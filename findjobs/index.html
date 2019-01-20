@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="white-bg">
+      <div class="container">
+        <header>
+          <img src="./img/logo.png" alt="logo" class="logo" />
+          <div class="left-menu">
+            <img
+              src="./img/notification-off.svg"
+              alt="notification"
+              class="notification"
+            />
+            <a href="#" class="dropdown-btn">findjobs pte ltd</a>
+          </div>
+
+          <!-- //this is hamburger menu -->
+
+          <a id="ham" class="ham-menu"><img src="./img/ham.svg" alt="ham"/></a>
+        </header>
+      </div>
+    </div>
+
+    <!-- this is the content of hamburger menu -->
+
+    <aside>
+      <div id="ham-menu-list" class="close">
+        <a id="close"><img src="./img/close.svg" alt="close button"/></a>
+
+        <nav>
+          <ul class="ham-menu-list">
+            <li><button class="primary-btn">POST JOB</button></li>
+            <li>Home</li>
+            <li>Job list</li>
+            <li>Candidate Search</li>
+            <li>Accout</li>
+            <li><span>Log Out</span></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <!------end----->
+
+    <div class="grey-bg">
+      <div class="container">
+        <nav>
+          <ul>
+            <li class="active">Home</li>
+            <li>Job List</li>
+            <li>Candidate Search</li>
+            <li>Account</li>
+          </ul>
+          <button class="primary-btn">POST JOB</button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="dark-blue-bg">
+      <div class="container breadcrumb">
+        <img src="./img/compony-logo.png" alt="compony-logo" />
+        <h1>Welcome, Sass Pte Ltd</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <section>
+        <ul class="card">
+          <li class="cardlist">
+            <img src="./img/icon-post-job.svg" alt="icon-post-job" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur laboriosam corrupti consectetur eius in? Aliquid unde
+              quibusdam delectus debitis voluptate!
+            </p>
+            <button class="secondary-btn">POST JOB</button>
+          </li>
+
+          <li class="cardlist">
+            <img src="./img/icon-post-job.svg" alt="icon-post-job" />
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consequuntur laboriosam corrupti consectetur eius in? Aliquid unde
+              quibusdam delectus debitis voluptate!
+            </p>
+            <button class="secondary-btn">SEARCH CANDIDATES</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+      document.getElementById("ham").addEventListener("click", function(e) {
+        document.getElementById("ham-menu-list").className = "toggle-overlay";
+      });
+
+      document.getElementById("close").addEventListener("click", function(e) {
+        document.getElementById("ham-menu-list").className = "close";
+      });
+    </script>
+  </body>
+</html>
